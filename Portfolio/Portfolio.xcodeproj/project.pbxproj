@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1489662DFCFE87002E2B24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1489652DFCFE82002E2B24 /* HomeView.swift */; };
+		8F1489682DFCFF5E002E2B24 /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1489672DFCFF5E002E2B24 /* AboutMeView.swift */; };
+		8F14896A2DFCFFCC002E2B24 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1489692DFCFFCC002E2B24 /* ExperienceView.swift */; };
+		8F14896D2DFD0007002E2B24 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14896C2DFCFFFC002E2B24 /* Experience.swift */; };
+		8F1489702DFD00C5002E2B24 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14896F2DFD00C5002E2B24 /* MainTabView.swift */; };
+		8F1489722DFD015E002E2B24 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1489712DFD015E002E2B24 /* ContactView.swift */; };
 		8FE897F52931089500A97CD7 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE897F42931089500A97CD7 /* PortfolioApp.swift */; };
 		8FE897F72931089500A97CD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE897F62931089500A97CD7 /* ContentView.swift */; };
 		8FE897F92931089700A97CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE897F82931089700A97CD7 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F1489652DFCFE82002E2B24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8F1489672DFCFF5E002E2B24 /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
+		8F1489692DFCFFCC002E2B24 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		8F14896C2DFCFFFC002E2B24 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		8F14896F2DFD00C5002E2B24 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8F1489712DFD015E002E2B24 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		8FE897F12931089500A97CD7 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE897F42931089500A97CD7 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		8FE897F62931089500A97CD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F14896B2DFCFFE9002E2B24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F14896C2DFCFFFC002E2B24 /* Experience.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F1489732DFD01D2002E2B24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FE897F82931089700A97CD7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F1489742DFD01EF002E2B24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F1489782DFD023E002E2B24 /* Experience */,
+				8F1489772DFD022F002E2B24 /* Contact */,
+				8F1489762DFD0205002E2B24 /* AboutMe */,
+				8F1489752DFD01F8002E2B24 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F1489752DFD01F8002E2B24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8F1489652DFCFE82002E2B24 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8F1489762DFD0205002E2B24 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				8F1489672DFCFF5E002E2B24 /* AboutMeView.swift */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		8F1489772DFD022F002E2B24 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				8F1489712DFD015E002E2B24 /* ContactView.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		8F1489782DFD023E002E2B24 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				8F1489692DFCFFCC002E2B24 /* ExperienceView.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		8F1489792DFD024C002E2B24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8F14896F2DFD00C5002E2B24 /* MainTabView.swift */,
+				8FE897F62931089500A97CD7 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		8FE897E82931089500A97CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +131,12 @@
 		8FE897F32931089500A97CD7 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				8FE897F42931089500A97CD7 /* PortfolioApp.swift */,
-				8FE897F62931089500A97CD7 /* ContentView.swift */,
-				8FE897F82931089700A97CD7 /* Assets.xcassets */,
 				8FE897FA2931089700A97CD7 /* Preview Content */,
+				8F1489792DFD024C002E2B24 /* Main */,
+				8F1489742DFD01EF002E2B24 /* Views */,
+				8F1489732DFD01D2002E2B24 /* Resources */,
+				8F14896B2DFCFFE9002E2B24 /* Models */,
+				8FE897F42931089500A97CD7 /* PortfolioApp.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -137,7 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1489682DFCFF5E002E2B24 /* AboutMeView.swift in Sources */,
+				8F1489662DFCFE87002E2B24 /* HomeView.swift in Sources */,
 				8FE897F72931089500A97CD7 /* ContentView.swift in Sources */,
+				8F1489722DFD015E002E2B24 /* ContactView.swift in Sources */,
+				8F14896D2DFD0007002E2B24 /* Experience.swift in Sources */,
+				8F1489702DFD00C5002E2B24 /* MainTabView.swift in Sources */,
+				8F14896A2DFCFFCC002E2B24 /* ExperienceView.swift in Sources */,
 				8FE897F52931089500A97CD7 /* PortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
