@@ -13,6 +13,8 @@
 		8F14896D2DFD0007002E2B24 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14896C2DFCFFFC002E2B24 /* Experience.swift */; };
 		8F1489702DFD00C5002E2B24 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14896F2DFD00C5002E2B24 /* MainTabView.swift */; };
 		8F1489722DFD015E002E2B24 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1489712DFD015E002E2B24 /* ContactView.swift */; };
+		8F14897B2DFDFA41002E2B24 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14897A2DFDFA41002E2B24 /* ProjectsView.swift */; };
+		8F14897F2DFDFA6E002E2B24 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14897E2DFDFA6E002E2B24 /* Project.swift */; };
 		8FE897F52931089500A97CD7 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE897F42931089500A97CD7 /* PortfolioApp.swift */; };
 		8FE897F72931089500A97CD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE897F62931089500A97CD7 /* ContentView.swift */; };
 		8FE897F92931089700A97CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE897F82931089700A97CD7 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		8F14896C2DFCFFFC002E2B24 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		8F14896F2DFD00C5002E2B24 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8F1489712DFD015E002E2B24 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		8F14897A2DFDFA41002E2B24 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		8F14897E2DFDFA6E002E2B24 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		8FE897F12931089500A97CD7 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE897F42931089500A97CD7 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		8FE897F62931089500A97CD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				8F14896C2DFCFFFC002E2B24 /* Experience.swift */,
+				8F14897E2DFDFA6E002E2B24 /* Project.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -63,6 +68,7 @@
 		8F1489742DFD01EF002E2B24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F14897C2DFDFA45002E2B24 /* Projects */,
 				8F1489782DFD023E002E2B24 /* Experience */,
 				8F1489772DFD022F002E2B24 /* Contact */,
 				8F1489762DFD0205002E2B24 /* AboutMe */,
@@ -110,6 +116,14 @@
 				8FE897F62931089500A97CD7 /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		8F14897C2DFDFA45002E2B24 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				8F14897A2DFDFA41002E2B24 /* ProjectsView.swift */,
+			);
+			path = Projects;
 			sourceTree = "<group>";
 		};
 		8FE897E82931089500A97CD7 = {
@@ -222,7 +236,9 @@
 				8F1489682DFCFF5E002E2B24 /* AboutMeView.swift in Sources */,
 				8F1489662DFCFE87002E2B24 /* HomeView.swift in Sources */,
 				8FE897F72931089500A97CD7 /* ContentView.swift in Sources */,
+				8F14897F2DFDFA6E002E2B24 /* Project.swift in Sources */,
 				8F1489722DFD015E002E2B24 /* ContactView.swift in Sources */,
+				8F14897B2DFDFA41002E2B24 /* ProjectsView.swift in Sources */,
 				8F14896D2DFD0007002E2B24 /* Experience.swift in Sources */,
 				8F1489702DFD00C5002E2B24 /* MainTabView.swift in Sources */,
 				8F14896A2DFCFFCC002E2B24 /* ExperienceView.swift in Sources */,
@@ -352,10 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
-				DEVELOPMENT_TEAM = AFHLTNWS4C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,6 +386,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,10 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Portfolio/Preview Content\"";
-				DEVELOPMENT_TEAM = AFHLTNWS4C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -399,6 +416,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

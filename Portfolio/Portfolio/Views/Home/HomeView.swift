@@ -13,69 +13,47 @@ struct HomeView: View {
             ZStack {
                 Color("white")
                     .ignoresSafeArea()
-                
+
                 VStack(spacing: 24) {
+                    Spacer()
+
                     Image("yanet_avatar")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 140, height: 140)
                         .clipShape(Circle())
                         .shadow(radius: 10)
-                    
+
                     Text("Yanet Rodriguez")
                         .font(.title)
                         .fontWeight(.bold)
-                    
-                    Text("iOS & Android Developer")
+
+                    Text("Cross-Platform Mobile Developer")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    
-                    Text("Apasionada por crear experiencias móviles de alto impacto. Desarrollo multiplataforma con .NET MAUI, Swift y Kotlin.")
+
+                    Text("Building seamless mobile experiences using Swift, Kotlin, and .NET MAUI.")
                         .font(.body)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
-                    
-                    HStack(spacing: 24) {
-                        SocialButton(icon: "link", title: "LinkedIn") {
-                            openURL("https://www.linkedin.com/in/yanetrodriguez/?locale=en_US")
-                        }
-                        
-                        SocialButton(icon: "envelope.fill", title: "Email") {
-                            openURL("yane.rodriguez26@gmail.com")
-                        }
-                        
-                        SocialButton(icon: "gearshape.fill", title: "GitHub") {
-                            openURL("https://github.com/yanetDev26")
-                        }
+
+                    Spacer()
+
+                    NavigationLink(destination: ProjectsView()) {
+                        Text("Explore My Projects")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color("green"))
+                            .cornerRadius(12)
+                            .padding(.horizontal)
                     }
+
+                    Spacer()
                 }
                 .padding()
-                .navigationTitle("Mi Portfolio")
-            }
-        }
-    }
-
-    private func openURL(_ urlString: String) {
-        if let url = URL(string: urlString) {
-            UIApplication.shared.open(url)
-        }
-    }
-}
-
-// MARK: - Social Button Component
-struct SocialButton: View {
-    let icon: String
-    let title: String
-    let action: () -> Void
-
-    var body: some View {
-        Button(action: action) {
-            VStack {
-                Image(systemName: icon)
-                    .font(.title)
-                    .foregroundColor(Color("green"))
-                Text(title)
-                    .font(.caption)
+                .navigationTitle("Welcome")
             }
         }
     }

@@ -8,23 +8,6 @@
 import SwiftUI
 
 struct ExperienceView: View {
-    let experiences: [Experience] = [
-        Experience(
-            company: "Flow",
-            role: "Mobile Developer",
-            period: "2022 - presente",
-            technologies: ["Swift", "Kotlin", ".NET MAUI", "Firebase", "GitHub", "Jira"],
-            description: "Migración de apps, desarrollo de nuevas funcionalidades, colaboración en arquitectura y liderazgo técnico en proyectos clave."
-        ),
-        Experience(
-            company: "Telecom",
-            role: "Trainee Mobile Developer",
-            period: "2021 - 2022",
-            technologies: ["Kotlin", "Firebase", "MVVM"],
-            description: "Colaboración en apps Android, mantenimiento y soporte, testing y primeras responsabilidades de desarrollo móvil."
-        )
-    ]
-
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {

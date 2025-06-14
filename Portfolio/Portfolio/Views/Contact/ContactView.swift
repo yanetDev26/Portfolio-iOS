@@ -11,11 +11,11 @@ struct ContactView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 32) {
-                Text("Contacto")
+                Text("Contact")
                     .font(.largeTitle)
                     .fontWeight(.bold)
 
-                Text("¿Querés ponerte en contacto conmigo? Podés escribirme o visitarme en mis redes profesionales.")
+                Text("Feel free to reach out for opportunities, collaborations, or just to connect. I'm always open to exciting projects and new challenges.")
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
