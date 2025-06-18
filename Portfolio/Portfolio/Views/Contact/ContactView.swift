@@ -30,7 +30,7 @@ struct ContactView: View {
                     }
 
                     ContactItem(icon: "doc.richtext.fill", title: "CV PDF", value: "Ver CV") {
-                        openURL("https://tu-link-al-cv.com")
+                        openURL("https://drive.google.com/file/d/1qsa8dZkPIv6ah_mYVa8pAoPPGNffkI6z/view?usp=drive_link")
                     }
 
                     ContactItem(icon: "gearshape.fill", title: "GitHub", value: "yanetDev26") {

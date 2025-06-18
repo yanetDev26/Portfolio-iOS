@@ -32,25 +32,23 @@ struct ProjectsView: View {
 
 struct ProjectCard: View {
     let project: Project
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            if let image = UIImage(named: project.imageName) {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(height: 160)
-                    .clipped()
-                    .cornerRadius(10)
-            }
-
+            Image(systemName: project.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 60)
+                .clipped()
+                .cornerRadius(10)
+            
             Text(project.title)
                 .font(.headline)
-
+            
             Text(project.description)
                 .font(.body)
                 .foregroundColor(.secondary)
-
+            
             HStack {
                 ForEach(project.technologies, id: \.self) { tech in
                     Text(tech)
@@ -61,8 +59,7 @@ struct ProjectCard: View {
                         .cornerRadius(8)
                 }
             }
-
-            if let url = project.link, let validURL = URL(string: url) {
+            if let validURL = URL(string: project.link) {
                 Link("View Project", destination: validURL)
                     .font(.caption)
                     .foregroundColor(.blue)

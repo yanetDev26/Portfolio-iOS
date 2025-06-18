@@ -12,22 +12,22 @@ struct MainTabView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Inicio", systemImage: "house.fill")
+                    Label("Home", systemImage: "house.fill")
                 }
                 
             AboutMeView()
                 .tabItem {
-                    Label("Sobre Mí", systemImage: "person.text.rectangle")
+                    Label("About Me", systemImage: "person.text.rectangle")
                 }
 
             ExperienceView()
                 .tabItem {
-                    Label("Experiencia", systemImage: "briefcase.fill")
+                    Label("Experience", systemImage: "briefcase.fill")
                 }
             
             ContactView()
                 .tabItem{
-                    Label("Contacto", systemImage: "envelope.fill")
+                    Label("Contact", systemImage: "envelope.fill")
                 }
         }
         .accentColor(Color("green"))

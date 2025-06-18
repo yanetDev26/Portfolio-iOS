@@ -12,30 +12,30 @@ struct Project: Identifiable {
     let title: String
     let description: String
     let technologies: [String]
-    let link: String?
+    let link: String
     let imageName: String
 }
 
 let sampleProjects: [Project] = [
     Project(
-        title: "Workout Tracker",
-        description: "A .NET MAUI app for managing training routines and tracking workout progress.",
-        technologies: [".NET MAUI", "MVVM", "SQLite"],
-        link: nil,
-        imageName: "workout"
+        title: "Dices",
+        description: "Pair of dice ideal for betting with friends. Simple application to show the random result of two dice.",
+        technologies: ["Swift", "UIKit"],
+        link: "https://github.com/yanetDev26/Dices",
+        imageName: "dice"
     ),
     Project(
-        title: "Live TV Entertainment App",
-        description: "Developed for Telecom SA to stream live TV, movies, and series using Swift and Kotlin.",
-        technologies: ["Swift", "KMP", "SwiftUI", "MVVM"],
-        link: nil,
-        imageName: "tv"
+        title: "Magic8Ball",
+        description: "Simple practice application with a random function as an answer to your question.",
+        technologies: ["Swift", "UIKit"],
+        link: "https://github.com/yanetDev26/Magic8Ball",
+        imageName: "8.circle.fill"
     ),
     Project(
-        title: "iOS App – Mutual del Tiro",
-        description: "Led the app from concept to App Store launch, including UI design, architecture, and deployment.",
-        technologies: ["Swift", "UIKit", "MVVM"],
-        link: "https://apps.apple.com", // example
-        imageName: "mutual"
+        title: "CamelCase",
+        description: "Haz que la función CamelCase(str) tome el parámetro str y lo retorne correctamente en el formato camel case, donde la primera letra de cada palabra es capitalizada, excepto la primera letra de todas. El string solamente contendrá letras y alguna combinación de caracteres delimitadores de puntuación separando cada palabra. Por ejemplo, si str es BOB loves-coding entonces el programa deberá devolver el string bobLovesCoding.",
+        technologies: ["Kotlin"],
+        link: "https://github.com/yanetDev26/CamelCase",
+        imageName: "textformat"
     )
 ]
